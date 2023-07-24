@@ -1,6 +1,3 @@
-@php
-    use Illuminate\Support\Facades\Auth;
-@endphp
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -137,13 +134,16 @@
 <div class="formbg-outer">
           <div class="formbg">
             <div class="formbg-inner padding-horizontal--48">
-              <center><span class="padding-bottom--15">¡Inicia sesion!</span></center>
+              <center><span class="padding-bottom--15">¡Crea tu propia cuenta!</span></center>
               
-              <pre>{{auth::user()}}</pre>
-
               
-              <form id="stripe-login" action="{{route('loggin')}}" method="post">
+              <form id="stripe-login" action="{{route('register')}}" method="POST">
               @csrf
+            
+              @method('POST')
+                <div class="field padding-bottom--24">
+                  <label for="name">Ingresa tu nombre de usuario</label>
+                  <input type="text" name="name">
                 <div class="field padding-bottom--24">
                   <label for="email">Ingresa tu correo</label>
                   <input type="email" name="email">
@@ -156,7 +156,7 @@
                 </div>
 
                 <div class="field padding-bottom--24">
-                  <input type="submit" name="submit" value="Iniciar sesion">
+                  <input type="submit" name="submit" value="Registrarse">
                 </div>
               </form>
 
@@ -164,7 +164,7 @@
             </div>
           </div>
           <div class="footer-link padding-top--24">
-          <span>¿No tienes cuenta? <a href="/registro">Crea una cuenta</a></span>
+          <span>¿Ya tienes cuenta? <a href="login">Inicia sesion</a></span>
             <div class="listing padding-top--24 padding-bottom--24 flex-flex center-center">
               <span><a href="#">© Stackfindover</a></span>
               <span><a href="#">Contact</a></span>

@@ -15,15 +15,6 @@ use App\Models\User;
 class Controller extends BaseController
 {
 
-
-    public function index()
-    {
-        return view('login');
-    }
-
-    public function login(){
-        return view('login');
-    }
     
     public function registrar(request $request)
     {
@@ -41,25 +32,41 @@ class Controller extends BaseController
 
 
 
+    public function registro()
+    {
+        return view('registro');
+    }
 
+    public function login(){
+        return view('login');
+    }
 
+    //crea una funcion para iniciar sesion desde una bd
+    public function loguearse(Request $request)
+    {
+        //metodo para iniciar sesion con modelo User
+        $credentials = $request->only('email', 'password');
 
+        if (Auth::attempt($credentials)) {
+            request()->session()->regenerate();
+            return redirect('/');
+        }
+                        
+            return redirect(route('login'));
+        
+    }
 
+    //funcion para cerrar sesion
+    public function logout()
+    {
+        Auth::logout();
 
-    // public function login()
-    // {
-    //     if (Auth::check()) {
-    //         if (Auth::user()->rol == 'admin') {
-    //             return redirect()->route('General.Users');
-    //         } else if (Auth::user()->rol == 'auxiliar') {
-    //             return redirect()->route('General.Users');
-    //         } else if (Auth::user()->rol == 'cliente') {
-    //             return redirect()->route('General.Users');
-    //         }
-    //     } else {
-    //         return view('login');
-    //     }
-    // }
+        request()->session()->invalidate();
+
+        request()->session()->regenerateToken();
+
+        return redirect('/');
+    }
 
     
 

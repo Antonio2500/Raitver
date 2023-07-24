@@ -18,13 +18,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/login', function () {
-    return view('login');
-});
 
 
-Route::get('/login', [Controller::class, 'index'])->name('login');
+Route::get('/registro', [Controller::class, 'registro'])->middleware('guest')->name('registro');
 Route::post('/registrado', [Controller::class, 'registrar'])->name('register');
+Route::get('/login', [Controller::class, 'login'])->middleware('guest')->name('login');
+Route::post('/login/save', [Controller::class, 'loguearse'])->name('loggin');
+Route::get('/logout', [Controller::class, 'logout'])->middleware('auth')->name('logout');
 
 
 
