@@ -15,6 +15,18 @@ use App\Models\User;
 class Controller extends BaseController
 {
 
+    public function registro()
+    {
+        return view('registro');
+    }
+
+    public function login(){
+        return view('login');
+    }
+
+    public function perfil(){
+        return view('perfil');
+    }
     
     public function registrar(request $request)
     {
@@ -30,16 +42,6 @@ class Controller extends BaseController
         return view('welcome');
     }
 
-
-
-    public function registro()
-    {
-        return view('registro');
-    }
-
-    public function login(){
-        return view('login');
-    }
 
     //crea una funcion para iniciar sesion desde una bd
     public function loguearse(Request $request)
