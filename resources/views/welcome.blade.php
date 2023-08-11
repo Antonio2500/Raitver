@@ -6,12 +6,9 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.css"  rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <title>Document</title>
+    <title>Raitver</title>
 </head>
 <body>
-
-
-
 
 <!--
   This example requires updating your template:
@@ -27,12 +24,12 @@
       <div class="flex h-16 items-center justify-between">
         <div class="flex items-center">
           <div class="flex-shrink-0">
-            <img class="h-8 w-8" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company">
+            <img class="h-12 w-12" src="images/coche.png" alt="Your Company" >
           </div>
           <div class="hidden md:block">
             <div class="ml-10 flex items-baseline space-x-4">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-              <a href="#" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Dashboard</a>
+              <a href="welcome" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Raitver</a>
               @guest
               <a href="registro" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Registrarse</a>
               <a href="login" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">login</a>
@@ -151,13 +148,13 @@
         <!-- Slides -->
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="images/Fondo1.jpg" alt="Slide 1">
+            <img src="images/imagen1.jpeg" alt="Slide 1">
           </div>
           <div class="carousel-item">
-            <img src="images/Fondo2.jpg" alt="Slide 2">
+            <img src="images/imagen2.jpeg" alt="Slide 2">
           </div>
           <div class="carousel-item">
-            <img src="images/Fondo3.jpg" alt="Slide 3">
+            <img src="images/imagen3.jpeg" alt="Slide 3">
           </div>
         </div>
 
@@ -175,12 +172,6 @@
   </div>
 </div>
 
-
-
-
-
-
-
 <br>
 <br>
 
@@ -193,42 +184,10 @@
             <h2 class="title-section">Para nuestra comodidad <span class="fg-primary">ofrecemos un buen servicio</span>
               por parte de nuestra comunidad</h2>
 
-            <p>Un pagina web donde podras dar un servicio de transporte y cobrar una pequeña tarifa o
+            <p>Un pagina web donde podrás dar un servicio de transporte y cobrar una pequeña tarifa o
               solicitar el el mismo servicio por una pequeña tarifa.</p>
           </div>
-          <div class="col-lg-6 py-3">
-            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-              <!-- Indicators -->
-              <ol class="carousel-indicators">
-                <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
-                <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
-                <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
-              </ol>
-
-              <!-- Slides -->
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="images/Fondo1.jpg" alt="Slide 1">
-                </div>
-                <div class="carousel-item">
-                  <img src="images/Fondo2.jpg" alt="Slide 2">
-                </div>
-                <div class="carousel-item">
-                  <img src="images/Fondo3.jpg" alt="Slide 3">
-                </div>
-              </div>
-
-              <!-- Controls -->
-              <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </a>
-            </div>
-          </div>
+          <div  class="col-lg-6 py-3" > <img src="images/Auto_Usado.jpg" alt="Slide 1"></div>
         </div>
       </div>
     </div>
@@ -238,74 +197,7 @@
 
 
   <footer class="bg-black dark:bg-gray-900">
-    <div class="mx-auto w-full max-w-screen-xl">
-        <div class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
-            <div>
-                <h2 class="mb-6 text-sm font-semibold text-white uppercase">Company</h2>
-                <ul class="text-gray-300 dark:text-gray-400 font-medium">
-                    <li class="mb-4">
-                        <a href="#" class="hover:underline">About</a>
-                    </li>
-                    <li class="mb-4">
-                        <a href="#" class="hover:underline">Careers</a>
-                    </li>
-                    <li class="mb-4">
-                        <a href="#" class="hover:underline">Brand Center</a>
-                    </li>
-                    <li class="mb-4">
-                        <a href="#" class="hover:underline">Blog</a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <h2 class="mb-6 text-sm font-semibold text-white uppercase">Help center</h2>
-                <ul class="text-gray-300 dark:text-gray-400 font-medium">
-                    <li class="mb-4">
-                        <a href="#" class="hover:underline">Discord Server</a>
-                    </li>
-                    <li class="mb-4">
-                        <a href="#" class="hover:underline">Twitter</a>
-                    </li>
-                    <li class="mb-4">
-                        <a href="#" class="hover:underline">Facebook</a>
-                    </li>
-                    <li class="mb-4">
-                        <a href="#" class="hover:underline">Contact Us</a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <h2 class="mb-6 text-sm font-semibold text-white uppercase">Legal</h2>
-                <ul class="text-gray-300 dark:text-gray-400 font-medium">
-                    <li class="mb-4">
-                        <a href="#" class="hover:underline">Privacy Policy</a>
-                    </li>
-                    <li class="mb-4">
-                        <a href="#" class="hover:underline">Licensing</a>
-                    </li>
-                    <li class="mb-4">
-                        <a href="#" class="hover:underline">Terms &amp; Conditions</a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <h2 class="mb-6 text-sm font-semibold text-white uppercase">Download</h2>
-                <ul class="text-gray-300 dark:text-gray-400 font-medium">
-                    <li class="mb-4">
-                        <a href="#" class="hover:underline">iOS</a>
-                    </li>
-                    <li class="mb-4">
-                        <a href="#" class="hover:underline">Android</a>
-                    </li>
-                    <li class="mb-4">
-                        <a href="#" class="hover:underline">Windows</a>
-                    </li>
-                    <li class="mb-4">
-                        <a href="#" class="hover:underline">MacOS</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+
         <div class="px-4 py-6 bg-gray-800 dark:bg-gray-700 md:flex md:items-center md:justify-between">
             <span class="text-sm text-gray-300 dark:text-gray-300 sm:text-center">Raitver</span>
             <div class="flex mt-4 space-x-5 sm:justify-center md:mt-0">

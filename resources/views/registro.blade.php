@@ -10,8 +10,7 @@
 
     <title>Registro de usuarios</title>
 </head>
-<body>
-
+<body class="bg-no-repeat bg-cover" style="background-image:url(/images/UPQ.jpg)" >
 
 <!--
   This example requires updating your template:
@@ -19,20 +18,20 @@
   ```
   <html class="h-full bg-gray-100">
   <body class="h-full">
-  ```
--->
-<div class="min-h-full">
+    ```
+  -->
+<div class="min-h-full ">
   <nav class="bg-gray-800">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <div class="flex h-16 items-center justify-between">
+    <div class="flex h-16 items-center justify-between">
         <div class="flex items-center">
           <div class="flex-shrink-0">
-            <img class="h-8 w-8" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company">
+            <img class="h-12 w-12" src="images/coche.png" alt="Your Company">
           </div>
           <div class="hidden md:block">
             <div class="ml-10 flex items-baseline space-x-4">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-              <a href="/" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Dashboard</a>
+              <a href="/" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Raitver</a>
             </div>
           </div>
         </div>
@@ -117,20 +116,6 @@
   </main>
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <div class="formbg-outer">
           <div class="formbg">
             <div class="formbg-inner padding-horizontal--48">
@@ -173,93 +158,13 @@
           </div>
         </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 <br>
 <br>
 <br>
 <br>
 <br>
 <footer class="bg-black dark:bg-gray-900">
-    <div class="mx-auto w-full max-w-screen-xl">
-        <div class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
-            <div>
-                <h2 class="mb-6 text-sm font-semibold text-white uppercase">Company</h2>
-                <ul class="text-gray-300 dark:text-gray-400 font-medium">
-                    <li class="mb-4">
-                        <a href="#" class="hover:underline">About</a>
-                    </li>
-                    <li class="mb-4">
-                        <a href="#" class="hover:underline">Careers</a>
-                    </li>
-                    <li class="mb-4">
-                        <a href="#" class="hover:underline">Brand Center</a>
-                    </li>
-                    <li class="mb-4">
-                        <a href="#" class="hover:underline">Blog</a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <h2 class="mb-6 text-sm font-semibold text-white uppercase">Help center</h2>
-                <ul class="text-gray-300 dark:text-gray-400 font-medium">
-                    <li class="mb-4">
-                        <a href="#" class="hover:underline">Discord Server</a>
-                    </li>
-                    <li class="mb-4">
-                        <a href="#" class="hover:underline">Twitter</a>
-                    </li>
-                    <li class="mb-4">
-                        <a href="#" class="hover:underline">Facebook</a>
-                    </li>
-                    <li class="mb-4">
-                        <a href="#" class="hover:underline">Contact Us</a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <h2 class="mb-6 text-sm font-semibold text-white uppercase">Legal</h2>
-                <ul class="text-gray-300 dark:text-gray-400 font-medium">
-                    <li class="mb-4">
-                        <a href="#" class="hover:underline">Privacy Policy</a>
-                    </li>
-                    <li class="mb-4">
-                        <a href="#" class="hover:underline">Licensing</a>
-                    </li>
-                    <li class="mb-4">
-                        <a href="#" class="hover:underline">Terms &amp; Conditions</a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <h2 class="mb-6 text-sm font-semibold text-white uppercase">Download</h2>
-                <ul class="text-gray-300 dark:text-gray-400 font-medium">
-                    <li class="mb-4">
-                        <a href="#" class="hover:underline">iOS</a>
-                    </li>
-                    <li class="mb-4">
-                        <a href="#" class="hover:underline">Android</a>
-                    </li>
-                    <li class="mb-4">
-                        <a href="#" class="hover:underline">Windows</a>
-                    </li>
-                    <li class="mb-4">
-                        <a href="#" class="hover:underline">MacOS</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+
         <div class="px-4 py-6 bg-gray-800 dark:bg-gray-700 md:flex md:items-center md:justify-between">
             <span class="text-sm text-gray-300 dark:text-gray-300 sm:text-center">Raitver</span>
             <div class="flex mt-4 space-x-5 sm:justify-center md:mt-0">
