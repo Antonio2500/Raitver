@@ -15,9 +15,9 @@ return new class extends Migration
             $table->id();
             $table->string('nombre');
             $table->string('carrera');
-            $table->blob('Credencial');
+            $table->string('Credencial');
             $table->string('Matricula');
-            $table->blob('Licencia');
+            $table->string('Licencia');
             $table->string('Modelo_Auto');
             $table->string('Placas');
             $table->string('Asientos_Disponibles');

@@ -28,6 +28,12 @@ class Controller extends BaseController
         return view('perfil');
     }
     
+
+
+
+
+
+    
     public function registrar(request $request)
     {
 
@@ -49,12 +55,18 @@ class Controller extends BaseController
         //metodo para iniciar sesion con modelo User
         $credentials = $request->only('email', 'password');
 
-        if (Auth::attempt($credentials)) {
-            request()->session()->regenerate();
-            return redirect('/');
+
+        if (Auth::attempt($credentials, $request->filled('remember'))) {
+            // El usuario ha sido autenticado correctamente.
+
+            return redirect()->intended('/');
         }
+
+        return back()->withErrors([
+            'email' => 'Las credenciales proporcionadas no coinciden con nuestros registros.',
+        ]);
                         
-            return redirect(route('login'));
+            // return redirect(route('login'));
         
     }
 
@@ -62,12 +74,36 @@ class Controller extends BaseController
     public function logout()
     {
         Auth::logout();
-
         request()->session()->invalidate();
-
         request()->session()->regenerateToken();
 
         return redirect('/');
+    }
+
+    //funcion para actualizar datos de usuario
+    public function actualizar(Request $request)
+    {
+        $user = User::find(Auth::user()->id);
+
+        if($request->hasFile('imagen')){
+            $file = $request->file('imagen');
+            $destinationPath = 'images/FotoPerfiles/';
+            $filename = time() . '-' . $file->getClientOriginalName();
+            $uploadSuccess = $request->file('imagen')->move($destinationPath, $filename);
+            $user->imagen = $destinationPath . $filename;
+        }
+
+        $user->name = $request->name;
+        $user->email = $request->email;
+
+        if($request->password != null){
+            $user->password = Hash::make($request->password);
+        }
+
+        $user->save();
+
+        //return 
+        return redirect(route('perfil'));
     }
 
     

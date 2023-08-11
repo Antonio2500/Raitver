@@ -26,6 +26,7 @@ Route::get('/login', [Controller::class, 'login'])->middleware('guest')->name('l
 Route::post('/login/save', [Controller::class, 'loguearse'])->name('loggin');
 Route::get('/logout', [Controller::class, 'logout'])->middleware('auth')->name('logout');
 Route::get('/perfil', [Controller::class, 'perfil'])->middleware('auth')->name('perfil');
+Route::put('/perfil/update/{id}', [Controller::class, 'actualizar'])->middleware('auth')->name('update');
 
 
 

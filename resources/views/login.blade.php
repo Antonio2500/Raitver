@@ -94,6 +94,10 @@
                   </div>
                   <input type="password" name="password">
                 </div>
+                <div>
+                  <input type="checkbox" name="remember" id="remember">
+                  <label for="remember">Recuérdame</label>
+                </div>
 
                 <div class="field padding-bottom--24">
                   <input type="submit" name="submit" value="Iniciar sesion">
